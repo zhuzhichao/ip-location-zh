@@ -31,7 +31,7 @@
 2. 在`app/config/app.php`，或者你自定义配置的app.php文件内添加
 
 	'aliases' => array( 	‘Ip’
-	 		  => 'Zhuzhichao\IpLocationZh\IP', 
+	 		  => 'Zhuzhichao\IpLocationZh\Ip', 
 	),
 3. 然后开始在你的项目里面使用了`Ip::find('1.192.94.203')`
 
