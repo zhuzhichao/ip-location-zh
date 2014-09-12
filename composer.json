@@ -1,0 +1,20 @@
+{
+    "name": "zhuzhichao/ip-location-zh",
+    "description": "get the ip's true location with Chinese",
+	"keywords": ["ip", "location", "chinese"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "zhuzhichao",
+            "email": "me@zhuzhichao.com"
+        }
+    ],
+	"autoload": {
+		"files": ["src/IpLocationZh.php"],
+		"psr-4": {
+			"Zhuzhichao\\IpLocationZh\\": "src/"
+		}
+	},
+    "minimum-stability": "stable",
+    "require": {}
+}
