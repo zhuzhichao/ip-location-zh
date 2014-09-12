@@ -25,7 +25,9 @@
 	use Zhuzhichao\IpLocationZh\Ip;  
 	var_dump(Ip::find('1.192.94.203'));
 对于`laravel`可以这样优雅的用:
+
 1. 安装该插件
+
 2. 在`app/config/app.php`，或者你自定义配置的app.php文件内添加
 
 	'aliases' => array( 	‘Ip’
