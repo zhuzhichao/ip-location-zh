@@ -33,7 +33,7 @@
 	'aliases' => array( 	'Ip'
 	 		  => 'Zhuzhichao\IpLocationZh\Ip', 
 	),
-3. 然后开始在你的项目里面使用了`Ip::find('1.192.94.203')`
+3. 然后开始在你的项目里面使用了`Ip::find('1.192.94.203')`，提示：在`laravel`中可以使用`Request::getClientIp()`来获取访问者的Ip
 
 对，很简单，只用一个方法，那就是`find`。
 
