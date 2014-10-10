@@ -22,7 +22,6 @@
 
 可以这样来用
 ```php
-   echo 'name';
 	<?php 
 	require 'vendor/autoload.php';  
 	use Zhuzhichao\IpLocationZh\Ip;  
@@ -33,7 +32,6 @@
 1.安装该插件
 2.在`app/config/app.php`，或者你自定义配置的app.php文件内添加
 ```php
-   echo 'name';
 	'aliases' => array( 	'Ip'
 	 		  => 'Zhuzhichao\IpLocationZh\Ip', 
 	),
