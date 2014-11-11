@@ -27,7 +27,9 @@ require 'vendor/autoload.php';  
 use Zhuzhichao\IpLocationZh\Ip;  
 var_dump(Ip::find('1.192.94.203'));
 ```
+
 ```
+// 返回结果
 array (size=4)
   0 => string '中国' (length=6)
   1 => string '河南' (length=6)
@@ -36,6 +38,7 @@ array (size=4)
 ```
 
 对于`laravel`可以这样优雅的用:
+
 1.安装该插件
 
 2.在`app/config/app.php`，或者你自定义配置的app.php文件内添加
