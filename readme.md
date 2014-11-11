@@ -17,25 +17,35 @@
 这里不详细介绍安装composer了，大家根据[链接](https://getcomposer.org/)自行安装吧！什么？没听过？你真的需要脑补了，赶快行动吧！^^
 
 ###Use
-如果已经有了`composer.json`文件的话，直接添加`"zhuzhichao/ip-location-zh": "1.*"` 到依赖，然后执行`composer update`。
+如果已经有了`composer.json`文件的话，直接添加`"zhuzhichao/ip-location-zh": "dev-master"` 到依赖，然后执行`composer update`。
 或者直接`composer require "zhuzhichao/ip-location-zh"`。
 
 可以这样来用
 ```php
-	<?php 
-	require 'vendor/autoload.php';  
-	use Zhuzhichao\IpLocationZh\Ip;  
-	var_dump(Ip::find('1.192.94.203'));
+<?php 
+require 'vendor/autoload.php';  
+use Zhuzhichao\IpLocationZh\Ip;  
+var_dump(Ip::find('1.192.94.203'));
+```
+```
+array (size=4)
+  0 => string '中国' (length=6)
+  1 => string '河南' (length=6)
+  2 => string '郑州' (length=6)
+  3 => string '' (length=0)
 ```
 
 对于`laravel`可以这样优雅的用:
 1.安装该插件
+
 2.在`app/config/app.php`，或者你自定义配置的app.php文件内添加
+
 ```php
 	'aliases' => array( 	'Ip'
 	 		  => 'Zhuzhichao\IpLocationZh\Ip', 
 	),
 ```
+
 3.然后开始在你的项目里面使用了`Ip::find('1.192.94.203')`，提示：在`laravel`中可以使用`Request::getClientIp()`来获取访问者的Ip
 
 
