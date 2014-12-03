@@ -27,7 +27,7 @@ class IP {
 		$nip   = gethostbyname($ip);
 		$ipdot = explode('.', $nip);
 
-		if ($ipdot[0] < 0 || $ipdot[0] > 255 || count($ipdot) !== 4) {
+		if ($ipdot[0]<0 || $ipdot[0]>255 || count($ipdot) !== 4) {
 			return 'N/A';
 		}
 
@@ -45,9 +45,9 @@ class IP {
 		$start      = unpack('Vlen', self::$index[$tmp_offset].self::$index[$tmp_offset + 1].self::$index[$tmp_offset + 2].self::$index[$tmp_offset + 3]);
 
 		$index_offset = $index_length = NULL;
-		$max_comp_len = self::$offset['len'] - 1028;
-		for ($start = $start['len'] * 8 + 1024; $start < $max_comp_len; $start += 8) {
-			if (self::$index{$start}.self::$index{$start + 1}.self::$index{$start + 2}.self::$index{$start + 3} >= $nip2) {
+		$max_comp_len = self::$offset['len'] - 1024 - 4;
+		for ($start = $start['len'] * 8 + 1024; $start<$max_comp_len; $start += 8) {
+			if (self::$index{$start}.self::$index{$start + 1}.self::$index{$start + 2}.self::$index{$start + 3}>=$nip2) {
 				$index_offset = unpack('Vlen', self::$index{$start + 4}.self::$index{$start + 5}.self::$index{$start + 6}."\x0");
 				$index_length = unpack('Clen', self::$index{$start + 7});
 
@@ -76,7 +76,7 @@ class IP {
 			}
 
 			self::$offset = unpack('Nlen', fread(self::$fp, 4));
-			if (self::$offset['len'] < 4) {
+			if (self::$offset['len']<4) {
 				throw new Exception('Invalid 17monipdb.dat file!');
 			}
 
@@ -90,3 +90,5 @@ class IP {
 		}
 	}
 }
+
+?>

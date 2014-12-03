@@ -1,6 +1,6 @@
 #Ip Location Zh
 
-数据最后更新时间为2014-10-11，预计下次更新时间为2014年12月上旬。
+数据最后更新时间为2014-12-1，预计下次更新时间为2015年2月上旬。
 
 这是一个能够通过Ip，获取该IP所在的位置，例如通过ip：`1.192.94.203`可以获得是`中国河南郑州`,同样能获得国外的地址，但是没有国内详细。
 **注：基于[17mon.cn](http://tool.17mon.cn/ipdb.html)的IP数据库进行制作，该数据库每2个月更新一次，届时同步更新该插件**
@@ -11,12 +11,11 @@
 2. 使用简单，功能专（dan）注（yi）
 3. 使用[composer](https://getcomposer.org/)进行安装管理，国际标准，方便快捷，即安即用，随时更新数据库
 
-##Install && Use
+##Install
 
-###Install Composer
 这里不详细介绍安装composer了，大家根据[链接](https://getcomposer.org/)自行安装吧！什么？没听过？你真的需要脑补了，赶快行动吧！^^
 
-###Use
+##Use
 如果已经有了`composer.json`文件的话，直接添加`"zhuzhichao/ip-location-zh": "dev-master"` 到依赖，然后执行`composer update`。
 或者直接`composer require "zhuzhichao/ip-location-zh"`。
 
