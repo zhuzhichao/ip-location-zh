@@ -1,5 +1,5 @@
 #Ip Location Zh
-
+[![Build Status](https://api.travis-ci.org/zhuzhichao/ip-location-zh.svg?branch=master)](https://travis-ci.org/zhuzhichao/ip-location-zh)
 数据最后更新时间为2014-12-1，预计下次更新时间为2015年2月上旬。
 
 这是一个能够通过Ip，获取该IP所在的位置，例如通过ip：`1.192.94.203`可以获得是`中国河南郑州`,同样能获得国外的地址，但是没有国内详细。
