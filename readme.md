@@ -15,9 +15,10 @@
 
 这里不详细介绍安装composer了，大家根据[链接](https://getcomposer.org/)自行安装吧！什么？没听过？你真的需要脑补了，赶快行动吧！^^
 
-##Use
 如果已经有了`composer.json`文件的话，直接添加`"zhuzhichao/ip-location-zh": "dev-master"` 到依赖，然后执行`composer update`。
 或者直接`composer require "zhuzhichao/ip-location-zh"`。
+
+##Use
 
 可以这样来用
 ```php
