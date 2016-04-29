@@ -3,6 +3,9 @@
 
 数据最后更新时间为 2015-2-1，预计下次更新时间为 2016 年 4 月。 数据源于: http://www.ipip.net/
 
+IPIP典型客户
+![ipip客户](http://7xkxib.com1.z0.glb.clouddn.com/ipipservercom.png)
+
 这是一个能够通过 Ip，获取该 IP 所在的位置，例如通过 ip：`1.192.94.203` 可以获得是 `中国河南郑州`, 同样能获得国外的地址，但是没有国内详细。
 
 ##特点
@@ -21,7 +24,6 @@
 
 可以这样来用
 ```php
-<?php 
 require 'vendor/autoload.php';  
 use Zhuzhichao\IpLocationZh\Ip;  
 var_dump(Ip::find('1.192.94.203'));
