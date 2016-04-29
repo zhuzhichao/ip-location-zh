@@ -2,7 +2,7 @@
 
 use Exception;
 
-class IP
+class Ip
 {
 
     private static $ip = null;

@@ -10,7 +10,6 @@
         }
     ],
 	"autoload": {
-		"files": ["src/IpLocationZh.php"],
 		"psr-4": {
 			"Zhuzhichao\\IpLocationZh\\": "src/"
 		}
