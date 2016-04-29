@@ -1,7 +1,7 @@
 #Ip Location Zh
 [![Build Status](https://api.travis-ci.org/zhuzhichao/ip-location-zh.svg?branch=master)](https://travis-ci.org/zhuzhichao/ip-location-zh)
 
-数据最后更新时间为 2015-2-1，预计下次更新时间为 2016 年 4 月。 数据源于: http://www.ipip.net/
+数据最后更新时间为 2015-2-1。 数据源于: http://www.ipip.net/
 
 IPIP典型客户
 ![ipip客户](http://7xkxib.com1.z0.glb.clouddn.com/ipipservercom.png)
