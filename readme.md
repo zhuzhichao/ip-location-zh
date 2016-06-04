@@ -1,7 +1,9 @@
 #Ip Location Zh
 [![Build Status](https://api.travis-ci.org/zhuzhichao/ip-location-zh.svg?branch=master)](https://travis-ci.org/zhuzhichao/ip-location-zh)
 
-数据最后更新时间为 2015-2-1，预计下次更新时间为 2016 年 4 月。 数据源于: http://www.ipip.net/
+该分支是为了 V1 版本下用户提供（ V2 版本更新了命名空间规则,可能引起 V1 的一些问题, 但是建议更新到 V2 版本, 因为 V1 将在 2016.12 年以后不再维护数据库了）
+
+数据最后更新时间为 2016-6-1，预计下次更新时间为 2016 年 8 月。 数据源于: http://www.ipip.net/
 
 这是一个能够通过 Ip，获取该 IP 所在的位置，例如通过 ip：`1.192.94.203` 可以获得是 `中国河南郑州`, 同样能获得国外的地址，但是没有国内详细。
 
