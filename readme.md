@@ -1,12 +1,16 @@
 #Ip Location Zh
 [![Build Status](https://api.travis-ci.org/zhuzhichao/ip-location-zh.svg?branch=master)](https://travis-ci.org/zhuzhichao/ip-location-zh)
 
-数据最后更新时间为 2015-2-1。 数据源于: http://www.ipip.net/
+数据最后更新时间为 2015-6-1。 数据源于: http://www.ipip.net/
 
 IPIP典型客户
 ![ipip客户](http://7xkxib.com1.z0.glb.clouddn.com/ipipservercom.png)
 
 这是一个能够通过 Ip，获取该 IP 所在的位置，例如通过 ip：`1.192.94.203` 可以获得是 `中国河南郑州`, 同样能获得国外的地址，但是没有国内详细。
+
+>注意: 该免费数据库不提供经纬度、运营商、行政区等更详细的内容, 如果你有更多的需求可以考虑使用他们的收费服务。本包的目的是提供给需求简单, 手里没钱的程序员来获取定时更新的IP信息
+>国家码和邮编不是该包负责的内容, 需自行构建相关的程序
+
 
 ##特点
 
@@ -20,7 +24,7 @@ IPIP典型客户
 
 `composer require "zhuzhichao/ip-location-zh"`
 
-##Use
+##Usage
 
 可以这样来用
 ```php
