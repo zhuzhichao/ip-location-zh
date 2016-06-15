@@ -29,6 +29,7 @@ IPIP典型客户
 
 ##Usage
 
+####Common
 可以这样来用
 ```php
 require 'vendor/autoload.php';  
@@ -45,6 +46,7 @@ array (size=4)
   3 => string '' (length=0)
 ```
 
+#### Laravel
 对于`laravel`可以这样优雅的用:
 
 1.安装该插件
