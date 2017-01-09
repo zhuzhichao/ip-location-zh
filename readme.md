@@ -44,6 +44,7 @@ array (size=4)
   1 => string '河南' (length=6)
   2 => string '郑州' (length=6)
   3 => string '' (length=0)
+  4 => string '410100' (length=6)
 ```
 
 #### Laravel
