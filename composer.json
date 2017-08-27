@@ -1,6 +1,6 @@
 {
     "name": "zhuzhichao/ip-location-zh",
-    "description": "get the ip's true location with Chinese",
+    "description": "get the ip's location info with Chinese",
 	"keywords": ["ip", "location", "chinese"],
     "license": "MIT",
     "authors": [
@@ -15,5 +15,8 @@
 		}
 	},
     "minimum-stability": "stable",
-    "require": {}
-}
+    "require": {},
+    "require-dev": {
+      "phpunit/phpunit": "~5.7"
+    }
+  }
