@@ -55,9 +55,9 @@ array (size=4)
 2.在 `app/config/app.php`(Laravel 4) 或 `config/app.php`(Laravel 5)，或者你自定义配置的 app.php 文件内添加
 
 ```php
-	'aliases' => array( 
-        'Ip'  => 'Zhuzhichao\IpLocationZh\Ip', 
-	),
+'aliases' => array( 
+	'Ip'  => 'Zhuzhichao\IpLocationZh\Ip', 
+),
 ```
 
 3.然后开始在你的项目里面使用了 `Ip::find('171.12.10.156')` 或 `Ip::find(Request::getClientIp())`
