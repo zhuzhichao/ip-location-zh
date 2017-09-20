@@ -92,6 +92,26 @@ class Ip
     {
         $province = $arr[1];
         $city = $arr[2];
+        $locationCode = self::locations();
+        $code = "";
+        if ( ! isset($locationCode[$province])) {
+            return $code;
+        }
+        $code = $locationCode[$province]["code"];
+        if ( ! empty($city)) {
+            foreach ($locationCode[$province]["city"] as $key => $loc) {
+                if (strpos($key, $city) !== false) {
+                    $code = $loc;
+                    break;
+                }
+            }
+        }
+
+        return $code;
+    }
+    
+    public static function locations()
+    {
         $locationCode = [];
         $locationCode["北京"] = [
             "code"=>"110000",
@@ -217,21 +237,8 @@ class Ip
             "code"=>"650000",
             "city"=> ["乌鲁木齐市"=>"650100", "克拉玛依市"=>"650200", "吐鲁番地区"=>"652100", "哈密地区"=>"652200", "昌吉回族自治州"=>"652300", "博尔塔拉蒙古自治州"=>"652700", "巴音郭楞蒙古自治州"=>"652800", "阿克苏地区"=>"652900", "克孜勒苏柯尔克孜自治州"=>"653000", "喀什地区"=>"653100", "和田地区"=>"653200", "伊犁哈萨克自治州"=>"654000", "塔城地区"=>"654200", "阿勒泰地区"=>"654300", "石河子市"=>"659001", "阿拉尔市"=>"659002", "图木舒克市"=>"659003", "五家渠市"=>"659004"],
         ];
-        $code = "";
-        if ( ! isset($locationCode[$province])) {
-            return $code;
-        }
-        $code = $locationCode[$province]["code"];
-        if ( ! empty($city)) {
-            foreach ($locationCode[$province]["city"] as $key => $loc) {
-                if (strpos($key, $city) !== false) {
-                    $code = $loc;
-                    break;
-                }
-            }
-        }
-
-        return $code;
+        
+        return $locationCode;
     }
 
     public function __destruct()
