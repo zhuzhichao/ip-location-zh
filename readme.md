@@ -55,10 +55,10 @@ array (size=4)
 2.在 `app/config/app.php`(Laravel 4) 或 `config/app.php`(Laravel 5.0 - 5.4)，或者你自定义配置的 app.php 文件内添加，如果是 Laravel 5.5 ，支持扩展包发现，不需要添加下面的代码
 
 ```php
-    // Laravel 5.5 不需要添加
-	'aliases' => array( 
-        'Ip'  => 'Zhuzhichao\IpLocationZh\Ip', 
-	),
+// Laravel 5.5 不需要添加
+'aliases' => array( 
+    'Ip'  => 'Zhuzhichao\IpLocationZh\Ip', 
+),
 ```
 
 3.然后开始在你的项目里面使用了 `Ip::find('171.12.10.156')` 或 `Ip::find(Request::getClientIp())`
