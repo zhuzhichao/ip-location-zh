@@ -52,9 +52,10 @@ array (size=4)
 
 1.安装该插件
 
-2.在 `app/config/app.php`(Laravel 4) 或 `config/app.php`(Laravel 5)，或者你自定义配置的 app.php 文件内添加
+2.在 `app/config/app.php`(Laravel 4) 或 `config/app.php`(Laravel 5.0 - 5.4)，或者你自定义配置的 app.php 文件内添加，如果是 Laravel 5.5 ，支持扩展包发现，不需要添加下面的代码
 
 ```php
+    // Laravel 5.5 不需要添加
 	'aliases' => array( 
         'Ip'  => 'Zhuzhichao\IpLocationZh\Ip', 
 	),

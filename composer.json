@@ -14,6 +14,13 @@
 			"Zhuzhichao\\IpLocationZh\\": "src/"
 		}
 	},
+    "extra": {
+      "laravel": {
+        "aliases": {
+          "Ip": "Zhuzhichao\\IpLocationZh\\Ip"
+        }
+      }
+    },
     "minimum-stability": "stable",
     "require": {},
     "require-dev": {
