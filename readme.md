@@ -1,4 +1,4 @@
-#Ip Location Zh
+# Ip Location Zh
 [![Build Status](https://api.travis-ci.org/zhuzhichao/ip-location-zh.svg?branch=master)](https://travis-ci.org/zhuzhichao/ip-location-zh)
 
 数据最后更新时间为 2017-7-4, 更新时间:不定期。 数据源于: http://www.ipip.net/
@@ -15,21 +15,21 @@ IPIP典型客户
 
 建议之前使用 v1 版本的同学更新到 v2 上面。 v1 的引用和命名空间不够规范,在 v2 版本中使用了 psr-4 标准。 v1 将数据库更新支持到2016年底。 v2 版本将长期更新
 
-##特点
+## 特点
 
 1. 不配置和使用数据库，妈妈再也不用担心配置问题了
 2. 使用简单，功能专（dān）注（yī）
 3. 使用 [composer](https://getcomposer.org/) 进行安装管理，国际标准，方便快捷，即安即用，随时更新数据库
 
-##Install
+## Install
 
 这里不详细介绍安装 composer 了，大家根据 [链接](https://getcomposer.org/) 自行安装吧！什么？没听过？你真的需要脑补了，赶快行动吧！^^
 
 `composer require "zhuzhichao/ip-location-zh"`
 
-##Usage
+## Usage
 
-####Common
+#### Common
 可以这样来用
 ```php
 require 'vendor/autoload.php';  
@@ -66,9 +66,9 @@ array (size=4)
 
 **对，很简单，只用一个方法，那就是 `find`**
 
-##Contributing
+## Contributing
 有什么新的想法和建议，欢迎提交 [issue](https://github.com/zhuzhichao/ip-location-zh/issues) 或者 [Pull Requests](https://github.com/zhuzhichao/ip-location-zh/pulls) 。
 
-##License
+## License
 MIT
 
