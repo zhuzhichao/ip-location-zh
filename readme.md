@@ -1,19 +1,17 @@
 # Ip Location Zh
 [![Build Status](https://api.travis-ci.org/zhuzhichao/ip-location-zh.svg?branch=master)](https://travis-ci.org/zhuzhichao/ip-location-zh)
 
-数据最后更新时间为 2018-1-1, 更新时间:不定期。 数据源于: http://www.ipip.net/
+数据最后更新时间为 2018-1-1, 更新时间:不定期。 数据源于: http://www.ipip.net
 
 IPIP典型客户
-![ipip客户](http://7xkxib.com1.z0.glb.clouddn.com/ipipservercom.png)
+![ipip客户](http://img.zhuzhichao.com/ipipservercom.png)
 
 这是一个能够通过 Ip，获取该 IP 所在的位置，例如通过 ip：`171.12.10.156` 可以获得是 `中国河南郑州`，以及中国行政区划代码(支持到市级), 同样能获得国外的地址，但是没有国内详细。
 
->注意: 该免费数据库不提供经纬度、运营商、行政区等更详细的内容, 如果你有更多的需求可以考虑使用他们的收费服务。本包的目的是提供给需求简单, 手里没钱的程序员来获取定时更新的IP信息
+>注意: 该免费数据库不提供经纬度、运营商、行政区等更详细的内容, 如果你有更多的需求可以考虑使用他们的收费服务。本包的目的是提供给需求简单, 手里没钱的程序员或者老板不舍得掏钱来获取定时更新的IP信息
 
 >国家码和邮编不是该包负责的内容, 需自行构建相关的程序
 
-
-建议之前使用 v1 版本的同学更新到 v2 上面。 v1 的引用和命名空间不够规范,在 v2 版本中使用了 psr-4 标准。 v1 将数据库更新支持到2016年底。 v2 版本将长期更新
 
 ## 特点
 
@@ -23,14 +21,16 @@ IPIP典型客户
 
 ## Install
 
-这里不详细介绍安装 composer 了，大家根据 [链接](https://getcomposer.org/) 自行安装吧！什么？没听过？你真的需要脑补了，赶快行动吧！^^
+这里不详细介绍安装 composer 了，大家根据 [链接](https://getcomposer.org/) 自行安装吧！
 
 `composer require "zhuzhichao/ip-location-zh"`
 
 ## Usage
 
 #### Common
+
 可以这样来用
+
 ```php
 require 'vendor/autoload.php';  
 use Zhuzhichao\IpLocationZh\Ip;  
@@ -48,17 +48,18 @@ array (size=4)
 ```
 
 #### Laravel
+
 对于`laravel`可以这样优雅的用:
 
 1.安装该插件
 
-2.在 `app/config/app.php`(Laravel 4) 或 `config/app.php`(Laravel 5.0 - 5.4)，或者你自定义配置的 app.php 文件内添加，如果是 Laravel 5.5 ，支持扩展包发现，不需要添加下面的代码
+2.在 `config/app.php`(Laravel 5.0 - 5.4)添加下面的代码，如果是 Laravel 5.5+ ，已经支持扩展包发现，不需要添加下面的代码
 
 ```php
 // Laravel 5.5 不需要添加
-'aliases' => array( 
+'aliases' => [
     'Ip'  => 'Zhuzhichao\IpLocationZh\Ip', 
-),
+],
 ```
 
 3.然后开始在你的项目里面使用了 `Ip::find('171.12.10.156')` 或 `Ip::find(Request::getClientIp())`
