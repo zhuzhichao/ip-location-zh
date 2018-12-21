@@ -20,6 +20,6 @@ class TestIp extends TestCase
         $locations = Ip::locations();
         $this->assertArrayHasKey('北京', $locations);
         $this->assertArrayHasKey('河北', $locations);
-        $this->assertGreaterThan(0, count($locations['河北']['city']));
+        $this->assertGreaterThan(0, count($locations['河北']['cities']));
     }
 }

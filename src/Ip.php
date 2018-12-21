@@ -14,7 +14,7 @@ class Ip
 
     private $meta = [];
 
-    private $database = __DIR__ . '/20180702.ipdb';
+    private $database = '20180702.ipdb';
 
     private static $reader = null;
 
@@ -199,16 +199,17 @@ class Ip
         }
 
         $reader = new self();
-        if (is_readable($reader->database) === FALSE) {
-            throw new \InvalidArgumentException("The IP Database file \"{$reader->database}\" does not exist or is not readable.");
+        $databaseSrc = __DIR__ . $reader->database;
+        if (is_readable($databaseSrc) === FALSE) {
+            throw new \InvalidArgumentException("The IP Database file \"{$databaseSrc}\" does not exist or is not readable.");
         }
-        $reader->file = @fopen($reader->database, 'rb');
+        $reader->file = @fopen($databaseSrc, 'rb');
         if ($reader->file === FALSE) {
-            throw new \InvalidArgumentException("IP Database File opening \"{$reader->database}\".");
+            throw new \InvalidArgumentException("IP Database File opening \"{$databaseSrc}\".");
         }
-        $reader->fileSize = @filesize($reader->database);
+        $reader->fileSize = @filesize($databaseSrc);
         if ($reader->fileSize === FALSE) {
-            throw new \UnexpectedValueException("Error determining the size of \"{$reader->database}\".");
+            throw new \UnexpectedValueException("Error determining the size of \"{$databaseSrc}\".");
         }
 
         $metaLength = unpack('N', fread($reader->file, 4))[1];
