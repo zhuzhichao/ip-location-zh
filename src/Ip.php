@@ -61,7 +61,6 @@ class Ip
         }
 
         return 'N/A';
-
     }
 
     /**
@@ -215,7 +214,7 @@ class Ip
         $metaLength = unpack('N', fread($reader->file, 4))[1];
         $text       = fread($reader->file, $metaLength);
 
-        $reader->meta = json_decode($text, true);
+        $reader->meta = (array)json_decode($text, true);
 
         if (!isset($reader->meta['fields']) || !isset($reader->meta['languages'])) {
             throw new \Exception('IP Database metadata error.');
