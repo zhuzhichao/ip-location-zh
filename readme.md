@@ -1,6 +1,11 @@
 # Ip Location Zh
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/zhuzhichao/ip-location-zh/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/zhuzhichao/ip-location-zh/?branch=master)
-[![Build Status](https://api.travis-ci.org/zhuzhichao/ip-location-zh.svg?branch=master)](https://travis-ci.org/zhuzhichao/ip-location-zh)
+<p>
+<a href="https://scrutinizer-ci.com/g/zhuzhichao/ip-location-zh/?branch=master"><img src="https://scrutinizer-ci.com/g/zhuzhichao/ip-location-zh/badges/quality-score.png?b=master" alt="Scrutinizer Code Quality"></a>
+<a href="https://travis-ci.org/zhuzhichao/ip-location-zh"><img src="https://travis-ci.org/zhuzhichao/ip-location-zh.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/zhuzhichao/ip-location-zh"><img src="https://poser.pugx.org/zhuzhichao/ip-location-zh/d/total.svg" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/zhuzhichao/ip-location-zh"><img src="https://poser.pugx.org/zhuzhichao/ip-location-zh/v/stable.svg" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/zhuzhichao/ip-location-zh"><img src="https://poser.pugx.org/zhuzhichao/ip-location-zh/license.svg" alt="License"></a>
+</p>
 
 数据最后更新时间为 2018-7-2, 更新时间:不定期。 数据源于: http://www.ipip.net
 
