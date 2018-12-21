@@ -198,8 +198,8 @@ class Ip
             return self::$reader;
         }
 
-        $reader = new self();
-        $databaseSrc = __DIR__ . $reader->database;
+        $reader      = new self();
+        $databaseSrc = __DIR__ . '/' . $reader->database;
         if (is_readable($databaseSrc) === FALSE) {
             throw new \InvalidArgumentException("The IP Database file \"{$databaseSrc}\" does not exist or is not readable.");
         }
