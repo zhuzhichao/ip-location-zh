@@ -1,4 +1,5 @@
 # Ip Location Zh
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/zhuzhichao/ip-location-zh/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/zhuzhichao/ip-location-zh/?branch=master)
 [![Build Status](https://api.travis-ci.org/zhuzhichao/ip-location-zh.svg?branch=master)](https://travis-ci.org/zhuzhichao/ip-location-zh)
 
 数据最后更新时间为 2018-7-2, 更新时间:不定期。 数据源于: http://www.ipip.net
