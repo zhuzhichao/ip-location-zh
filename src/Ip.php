@@ -14,7 +14,7 @@ class Ip
 
     private $meta = [];
 
-    private $database = '20180702.ipdb';
+    private $database = '20190703.ipdb';
 
     private static $reader = null;
 
