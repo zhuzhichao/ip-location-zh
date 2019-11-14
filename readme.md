@@ -7,7 +7,7 @@
 <a href="https://packagist.org/packages/zhuzhichao/ip-location-zh"><img src="https://poser.pugx.org/zhuzhichao/ip-location-zh/license.svg" alt="License"></a>
 </p>
 
-数据最后更新时间为 2018-7-2, 更新时间:不定期。 数据源于: http://www.ipip.net
+数据最后更新时间为 2019-7-3, 更新时间:不定期。 数据源于: http://www.ipip.net
 
 IPIP典型客户
 ![ipip客户](http://img.zhuzhichao.com/ipipservercom.png)
